@@ -8,7 +8,12 @@ jobs:
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/fast-forward')
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Action
+        uses: actions/checkout@v3
+        with:
+          repository: "summera/fast-forward-js-action"
+          ref: "574cde71b05e0ed76ece02e8122bab18f29a13e0"
       - name: Fast Forward PR
-        uses: summera/fast-forward-js-action@574cde71b05e0ed76ece02e8122bab18f29a13e0
+        uses: ./
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
