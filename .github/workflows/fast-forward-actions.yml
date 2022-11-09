@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fast Forward PR
-        uses: endre-spotlab/fast-forward-js-action@2.1
+        uses: summera/fast-forward-js-action@05c2ad8
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
