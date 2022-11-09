@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: "summera/fast-forward-js-action"
-          ref: "574cde71b05e0ed76ece02e8122bab18f29a13e0"
+          ref: "05c2ad8d53924383fccaaa218437e8480d564074"
       - name: Fast Forward PR
         uses: ./
         with:
